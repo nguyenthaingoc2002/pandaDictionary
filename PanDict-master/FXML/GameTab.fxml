@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="gameTab" fx:id="gameTab" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #669966;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Control.GameController">
+   <children>
+      <ImageView fitHeight="99.0" fitWidth="150.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Style/Game.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="108.0" layoutY="11.0" prefHeight="71.0" prefWidth="407.0" text="Trò chơi">
+         <font>
+            <Font name="System Bold" size="72.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="questionArea" layoutX="169.0" layoutY="197.0" prefHeight="62.0" prefWidth="242.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TextArea>
+      <TextArea fx:id="answerArea" layoutX="169.0" layoutY="277.0" prefHeight="62.0" prefWidth="242.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+         <font>
+            <Font size="20.0" />
+         </font></TextArea>
+      <Button layoutX="434.0" layoutY="212.0" mnemonicParsing="false" onAction="#Change" prefHeight="32.0" prefWidth="71.0" text="Change">
+         <effect>
+            <InnerShadow height="11.12" radius="6.5425" width="17.05" />
+         </effect></Button>
+      <Button layoutX="434.0" layoutY="292.0" mnemonicParsing="false" onAction="#Submit" prefHeight="32.0" prefWidth="71.0" text="Submit">
+         <effect>
+            <InnerShadow height="18.04" radius="8.2725" width="17.05" />
+         </effect></Button>
+      <Button layoutX="539.0" layoutY="338.0" mnemonicParsing="false" onAction="#backButton" prefHeight="35.0" prefWidth="47.0">
+         <graphic>
+            <ImageView fitHeight="37.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Style/back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <effect>
+            <InnerShadow height="11.86" radius="4.9350000000000005" width="9.88" />
+         </effect>
+      </Button>
+      <Text layoutX="13.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Câu hỏi:">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Text>
+      <Text layoutX="23.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Trả lời:">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="noticeArea" layoutX="420.0" layoutY="71.0" prefHeight="71.0" prefWidth="171.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </TextArea>
+      <ImageView fitHeight="71.0" fitWidth="72.0" layoutX="384.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Style/Panda_game.png" />
+         </image>
+      </ImageView>
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>

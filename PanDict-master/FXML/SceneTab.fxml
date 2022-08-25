@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="menuTab" fx:id="menuTab" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #669966;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Control.SceneController">
+    <children>
+        <ImageView fitHeight="129.0" fitWidth="150.0" layoutX="457.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Style/Panda.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="131.0" layoutY="24.0" prefHeight="94.0" prefWidth="307.0" text="PanDict" textFill="WHITE">
+            <font>
+                <Font name="UD Digi Kyokasho NP-B" size="72.0" />
+            </font>
+        </Label>
+        <Button layoutX="42.0" layoutY="165.0" mnemonicParsing="false" onAction="#searchButton" prefHeight="42.0" prefWidth="114.0" text="Tra từ">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+        </Button>
+        <Button layoutX="40.0" layoutY="239.0" mnemonicParsing="false" onAction="#addButton" prefHeight="42.0" prefWidth="114.0" text="Thêm từ">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+        </Button>
+        <Button layoutX="42.0" layoutY="309.0" mnemonicParsing="false" onAction="#favoriteButton" prefHeight="42.0" prefWidth="114.0" text="Yêu thích">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+        </Button>
+        <Button layoutX="243.0" layoutY="165.0" mnemonicParsing="false" onAction="#apiButton" prefHeight="42.0" prefWidth="114.0" text="GG Dịch" AnchorPane.leftAnchor="243.0" AnchorPane.topAnchor="165.0">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+        </Button>
+        <Button layoutX="243.0" layoutY="239.0" mnemonicParsing="false" onAction="#historyButton" prefHeight="42.0" prefWidth="114.0" text="Lịch sử">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+        </Button>
+        <Button layoutX="243.0" layoutY="309.0" mnemonicParsing="false" onAction="#gameButton" prefHeight="42.0" prefWidth="114.0" text="Trò chơi">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+        </Button>
+        <Button layoutX="438.0" layoutY="207.0" mnemonicParsing="false" onAction="#informationButton" prefHeight="42.0" prefWidth="114.0" text="Thông tin">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+        </Button>
+        <ImageView fitHeight="94.0" fitWidth="99.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Style/DictionaryIcon.png" />
+            </image>
+        </ImageView>
+        <Button layoutX="438.0" layoutY="281.0" mnemonicParsing="false" onAction="#guideButton" prefHeight="42.0" prefWidth="114.0" text=" Hướng dẫn">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+        </Button>
+    </children>
+    <effect>
+        <InnerShadow choke="0.96" color="#eeaf86" height="15.07" radius="11.977500000000001" width="34.84" />
+    </effect>
+</AnchorPane>

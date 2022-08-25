@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="favoriteTab" fx:id="favoriteTab" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #669966;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Control.FavoriteController">
+   <children>
+      <ImageView fitHeight="121.0" fitWidth="118.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Style/favorite.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="126.0" layoutY="20.0" prefHeight="104.0" prefWidth="424.0" text="Yêu thích">
+         <font>
+            <Font name="System Bold" size="72.0" />
+         </font>
+      </Label>
+      <TextField fx:id="searchTextField" layoutX="10.0" layoutY="139.0" onKeyReleased="#readWord" prefHeight="35.0" prefWidth="162.0" promptText="Nhập">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TextField>
+      <TextArea fx:id="pronunciationArea" layoutX="411.0" layoutY="140.0" prefHeight="37.0" prefWidth="118.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect></TextArea>
+      <TextArea fx:id="textAreaFavorite" layoutX="271.0" layoutY="193.0" prefHeight="150.0" prefWidth="316.0" promptText="Giải thích">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TextArea>
+      <Button layoutX="179.0" layoutY="143.0" mnemonicParsing="false" onAction="#searchButton" prefHeight="27.0" prefWidth="59.0" text="Tìm">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button layoutX="534.0" layoutY="141.0" mnemonicParsing="false" onAction="#voiceButton" prefHeight="45.0" prefWidth="52.0">
+         <graphic>
+            <ImageView fitHeight="37.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Style/speaker.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <ListView fx:id="listViewFavorite" layoutX="10.0" layoutY="186.0" prefHeight="200.0" prefWidth="162.0">
+         <effect>
+            <InnerShadow />
+         </effect></ListView>
+      <Text layoutX="271.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cách phát âm:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Button layoutX="525.0" layoutY="350.0" mnemonicParsing="false" onAction="#backButton" prefHeight="27.0" prefWidth="50.0">
+         <graphic>
+            <ImageView fitHeight="34.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Style/back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Button layoutX="181.0" layoutY="186.0" mnemonicParsing="false" onAction="#deleteButton" prefHeight="46.0" prefWidth="53.0">
+         <graphic>
+            <ImageView fitHeight="42.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Style/delete.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

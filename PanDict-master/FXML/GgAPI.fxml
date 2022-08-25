@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="apiTab" fx:id="apiTab" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #669966;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Control.APIController">
+   <children>
+      <ImageView fitHeight="88.0" fitWidth="103.0" layoutX="8.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Style/GGTranslate.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="122.0" layoutY="24.0" prefHeight="78.0" prefWidth="431.0" text="Google dịch">
+         <font>
+            <Font name="System Bold" size="60.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="textAreaEnglish" layoutX="41.0" layoutY="173.0" prefHeight="176.0" prefWidth="200.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></TextArea>
+      <TextArea fx:id="textAreaVietnamese" layoutX="364.0" layoutY="173.0" prefHeight="176.0" prefWidth="200.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></TextArea>
+      <ImageView fitHeight="67.0" fitWidth="80.0" layoutX="41.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Style/eng.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="67.0" fitWidth="80.0" layoutX="364.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Style/vie.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="122.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ENG">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Text>
+      <Text layoutX="451.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VIE">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Text>
+      <Button layoutX="253.0" layoutY="200.0" mnemonicParsing="false" onAction="#EtoV" prefHeight="36.0" prefWidth="102.0" text="Eng --&gt; Vie">
+         <effect>
+            <InnerShadow />
+         </effect></Button>
+      <Button layoutX="253.0" layoutY="274.0" mnemonicParsing="false" onAction="#VtoE" prefHeight="36.0" prefWidth="102.0" text="Eng &lt;-- Vie">
+         <effect>
+            <InnerShadow />
+         </effect></Button>
+      <Button layoutX="512.0" layoutY="349.0" mnemonicParsing="false" onAction="#backButton" prefHeight="36.0" prefWidth="53.0" AnchorPane.topAnchor="354.0">
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Style/back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <BorderPane fx:id="borderPane" layoutX="200.0" layoutY="1.0" prefHeight="98.0" prefWidth="431.0" />
+      <Pane fx:id="loadingPane" layoutX="-5.0" prefHeight="400.0" prefWidth="631.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ProgressBar fx:id="progressBar" layoutX="170.0" layoutY="153.0" prefHeight="47.0" prefWidth="225.0" progress="0.0" />
+            <ProgressIndicator fx:id="progressIndicator" layoutX="432.0" layoutY="161.0" prefHeight="32.0" prefWidth="53.0" progress="0.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

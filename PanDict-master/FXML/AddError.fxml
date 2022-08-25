@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="97.0" prefWidth="459.0" style="-fx-background-color: #669966;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="104.0" fitWidth="119.0" layoutX="-2.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Style/notice.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="109.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Từ đã có trong danh sách">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>

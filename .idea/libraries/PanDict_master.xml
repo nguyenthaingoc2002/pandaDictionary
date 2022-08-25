@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="PanDict-master">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/PanDict-master/AnimateFX-1.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/PanDict-master/jackson-annotations-2.13.0-rc1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/PanDict-master/object-mapper-1.1.68.jar!/" />
+      <root url="jar://$PROJECT_DIR$/PanDict-master/jackson-core-2.13.0-rc1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/PanDict-master/charm-glisten-4.4.1-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/PanDict-master/sqlite-jdbc-3.36.0.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/PanDict-master/freetts-1.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/PanDict-master/jackson-databind-2.13.0-rc1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="addTab" fx:id="addTab" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #669966;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Control.AddController">
+   <children>
+      <ImageView fitHeight="95.0" fitWidth="150.0" layoutX="7.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Style/Add.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="122.0" layoutY="2.0" prefHeight="86.0" prefWidth="433.0" text="Thêm từ">
+         <font>
+            <Font name="System Bold" size="72.0" />
+         </font>
+      </Label>
+      <TextField fx:id="wordTextField" layoutX="69.0" layoutY="159.0" prefHeight="36.0" prefWidth="168.0">
+         <effect>
+            <InnerShadow />
+         </effect></TextField>
+      <TextField fx:id="pronunciationTextField" layoutX="69.0" layoutY="246.0" prefHeight="36.0" prefWidth="168.0">
+         <effect>
+            <InnerShadow />
+         </effect></TextField>
+      <TextField fx:id="typeTextField" layoutX="67.0" layoutY="336.0" prefHeight="36.0" prefWidth="168.0">
+         <effect>
+            <InnerShadow />
+         </effect></TextField>
+      <TextArea fx:id="explainArea" layoutX="300.0" layoutY="159.0" prefHeight="187.0" prefWidth="273.0">
+         <effect>
+            <InnerShadow />
+         </effect></TextArea>
+      <Button layoutX="300.0" layoutY="354.0" mnemonicParsing="false" onAction="#applyButton" prefHeight="37.0" prefWidth="112.0" text="Apply">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <Text layoutX="28.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Từ muốn thêm:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="32.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cách phát âm:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="32.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Loại từ:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="300.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Giải thích:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Button layoutX="521.0" layoutY="352.0" mnemonicParsing="false" onAction="#backButton" prefHeight="36.0" prefWidth="52.0">
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Style/back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+      <BorderPane fx:id="addSuccessBorder" layoutX="421.0" prefHeight="95.0" prefWidth="200.0" AnchorPane.rightAnchor="-21.0" AnchorPane.topAnchor="0.0" />
+   </children>
+</AnchorPane>

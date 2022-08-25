@@ -1,0 +1,9 @@
+.button:hover{
+    -fx-translate-y: -3px;
+}
+.button:pressed{
+    -fx-translate-y: -1px;
+}
+.button{
+    -fx-background-color: #ffffff;
+}

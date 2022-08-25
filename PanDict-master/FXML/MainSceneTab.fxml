@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="root" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Control.Controller">
+
+    <fx:include source="InformationTab.fxml" />
+    <fx:include source="AddTab.fxml" />
+    <fx:include source="FavoriteTab.fxml" />
+    <fx:include source="GameTab.fxml" />
+    <fx:include source="GgAPI.fxml" />
+    <fx:include source="GuideTab.fxml" />
+    <fx:include source="HistoryTab.fxml" />
+    <fx:include source="SearchTab.fxml" />
+    <fx:include source="SceneTab.fxml" />
+</AnchorPane>

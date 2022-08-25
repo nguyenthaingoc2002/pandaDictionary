@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="guideTab" fx:id="guideTab" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #669966;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Control.GuideController">
+   <children>
+      <ImageView fitHeight="125.0" fitWidth="150.0" layoutX="-8.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Style/guide.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="117.0" layoutY="20.0" prefHeight="101.0" prefWidth="408.0" text="Hướng dẫn">
+         <font>
+            <Font name="System Bold" size="72.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="guideArea" layoutX="101.0" layoutY="146.0" prefHeight="209.0" prefWidth="395.0">
+         <effect>
+            <InnerShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextArea>
+      <Button layoutX="534.0" layoutY="330.0" mnemonicParsing="false" onAction="#backButton" prefHeight="47.0" prefWidth="47.0">
+         <graphic>
+            <ImageView fitHeight="39.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Style/back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>
